@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Bar and Restaurant Survey Form</h1>
+    <p id="description">
+      A survey form to gather feedback on your experience at our bar and restaurant.
+    </p>
+    <form id="survey-form" action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <label id="name-label" for="name">Name:</label>
+          <input id="name" name="name" type="text" placeholder="John Customer" required />
+        </p>
+        <p>
+          <label id="email-label" for="email">Email Address:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="email@example.com"
+            required
+          />
+        </p>
+        <p>
+          <label id="number-label" for="phone">Phone Number:</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="07555 555555"
+            minlength="8"
+            maxlength="15"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Review Our Service</legend>
+        <p>
+          <label for="bar-rating">
+            How was your experience of our <strong>bar</strong>?
+          </label>
+          <select name="barRating" id="bar-rating" required>
+            <option value="">Select one</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Great">Great</option>
+            <option value="Satisfactory">Satisfactory</option>
+            <option value="Disappointing">Disappointing</option>
+            <option value="Awful">Awful</option>
+          </select>
+        </p>
+
+        <p>
+          <label for="restaurant-rating">
+            How was your experience of our <strong>restaurant</strong>?
+          </label>
+          <select name="restaurantRating" id="restaurant-rating" required>
+            <option value="">Select one</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Great">Great</option>
+            <option value="Satisfactory">Satisfactory</option>
+            <option value="Disappointing">Disappointing</option>
+            <option value="Awful">Awful</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Info</legend>
+        <p>Based on your visit, would you be likely to… (check all that apply)</p>
+        <p>
+          <input type="checkbox" id="return-meal" name="likelyActions" value="return-meal" />
+          <label for="return-meal">Return for a meal</label>
+        </p>
+        <p>
+          <input type="checkbox" id="return-bar" name="likelyActions" value="return-bar" />
+          <label for="return-bar">Return for a drink</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="likelyActions"
+            value="recommendation"
+          />
+          <label for="recommendation">Recommend us to a friend</label>
+        </p>
+        <p>What best describes your next visit?</p>
+        <p>
+          <input type="radio" id="occasion" name="nextVisit" value="occasion" />
+          <label for="occasion">Join us for a family occasion</label>
+        </p>
+        <p>
+          <input type="radio" id="offer" name="nextVisit" value="offer" />
+          <label for="offer">Return during a promotional period</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" cols="30" rows="8"></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Bar and Restaurant Survey Form</h1>
+    <p id="description">
+      A survey form to gather feedback on your experience at our bar and restaurant.
+    </p>
+    <form id="survey-form" action="#" method="post">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <p>
+          <label id="name-label" for="name">Name:</label>
+          <input id="name" name="name" type="text" placeholder="John Customer" required />
+        </p>
+        <p>
+          <label id="email-label" for="email">Email Address:</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="email@example.com"
+            required
+          />
+        </p>
+        <p>
+          <label id="number-label" for="phone">Phone Number:</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="07555 555555"
+            minlength="8"
+            maxlength="15"
+          />
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Review Our Service</legend>
+        <p>
+          <label for="bar-rating">
+            How was your experience of our <strong>bar</strong>?
+          </label>
+          <select name="barRating" id="bar-rating" required>
+            <option value="">Select one</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Great">Great</option>
+            <option value="Satisfactory">Satisfactory</option>
+            <option value="Disappointing">Disappointing</option>
+            <option value="Awful">Awful</option>
+          </select>
+        </p> 
+        <p>
+          <label for="restaurant-rating">
+            How was your experience of our <strong>restaurant</strong>?
+          </label>
+          <select name="restaurantRating" id="restaurant-rating" required>
+            <option value="">Select one</option>
+            <option value="Excellent">Excellent</option>
+            <option value="Great">Great</option>
+            <option value="Satisfactory">Satisfactory</option>
+            <option value="Disappointing">Disappointing</option>
+            <option value="Awful">Awful</option>
+          </select>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Info</legend>
+        <p>Based on your visit, would you be likely to… (check all that apply)</p>
+        <p>
+          <input type="checkbox" id="return-meal" name="likelyActions" value="return-meal" />
+          <label for="return-meal">Return for a meal</label>
+        </p>
+        <p>
+          <input type="checkbox" id="return-bar" name="likelyActions" value="return-bar" />
+          <label for="return-bar">Return for a drink</label>
+        </p>
+        <p>
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="likelyActions"
+            value="recommendation"
+          />
+          <label for="recommendation">Recommend us to a friend</label>
+        </p>
+        <p>What best would invite your next visit?</p>
+        <p>
+          <input type="radio" id="occasion" name="nextVisit" value="occasion" />
+          <label for="occasion">Joining us for a family occasion</label>
+        </p>
+        <p>
+          <input type="radio" id="offer" name="nextVisit" value="offer" />
+          <label for="offer">Returning during a promotional period</label>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend>Additional Comments</legend>
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" cols="30" rows="8"></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit Form</button>
+    </form>
+  </body>
+</html>
